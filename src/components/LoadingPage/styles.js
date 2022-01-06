@@ -28,6 +28,7 @@ export const ContainerLoading = styled.div`
   min-height: 100vh;
   min-width: 100vw;
   background-color: ${({ theme }) => theme.colors.background};
+  transition: 1.2s;
 
   div {
     position: relative;
