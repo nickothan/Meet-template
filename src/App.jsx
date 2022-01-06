@@ -1,5 +1,13 @@
+//* Import styles
 import { ContainerApp } from "./styles"
 
-const App = () => <ContainerApp>App</ContainerApp>
+//* Import components
+import LoadingPage from "./components/LoadingPage"
+
+const App = () => (
+  <ContainerApp>
+    <LoadingPage />
+  </ContainerApp>
+)
 
 export default App
