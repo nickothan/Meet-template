@@ -54,10 +54,12 @@ export const Global = createGlobalStyle`
     font-size: 48px;
     font-weight: 600;
     margin: 20px 0;
+    color: ${({ theme }) => theme.colors.prymary};
   }
-
+  
   p{
     font-size: 18px;
     color: red;
+    color: ${({ theme }) => theme.colors.text};
   }
 `
