@@ -5,5 +5,5 @@ export const theme = {
     text: "#97adb7",
     background: "#013243"
   },
-  fonts: {}
+  fonts: { inter: "Inter", sen: "Sen" }
 }

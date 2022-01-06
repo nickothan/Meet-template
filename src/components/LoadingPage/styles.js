@@ -22,6 +22,8 @@ const animate2 = keyframes`
 export const ContainerLoading = styled.div`
   position: fixed;
   display: flex;
+  top: 0;
+  left: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;

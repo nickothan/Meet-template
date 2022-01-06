@@ -37,8 +37,8 @@ export const Global = createGlobalStyle`
 
   blockquote:before, blockquote:after,
   q:before, q:after {
-    content: '';
     content: none;
+    content: '';
   }
 
   table {
@@ -47,19 +47,15 @@ export const Global = createGlobalStyle`
   }
 
   h1 {
-    font-size: 34px;
-  }
-
-  h2 {
-    font-size: 48px;
+    font-size: 100px;
+    color: ${({ theme }) => theme.colors.primary};
     font-weight: 600;
-    margin: 20px 0;
-    color: ${({ theme }) => theme.colors.prymary};
+    font-family: ${({ theme }) => theme.fonts.inter}
   }
   
   p{
     font-size: 18px;
-    color: red;
     color: ${({ theme }) => theme.colors.text};
+    font-family: ${({ theme }) => theme.fonts.sen}
   }
 `

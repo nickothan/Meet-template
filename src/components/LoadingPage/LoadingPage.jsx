@@ -10,7 +10,7 @@ window.onload = function () {
     setTimeout(() => {
       contenedor.style.display = "none"
     }, 1000)
-  }, 5000)
+  }, 3000)
 }
 
 const LoadingPage = () => (
