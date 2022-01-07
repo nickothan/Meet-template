@@ -20,10 +20,10 @@ export const Global = createGlobalStyle`
   }
 
   body {
+    display: block;
+    height: 100vh;
     line-height: 1;
-    font-family: ${({ theme }) => {
-      theme.fonts ? theme.fonts : ""
-    }};
+    font-family: ${({ theme }) => theme.fonts.sen}
     font-size: 18px;
   }
 
@@ -56,6 +56,11 @@ export const Global = createGlobalStyle`
   p{
     font-size: 18px;
     color: ${({ theme }) => theme.colors.text};
-    font-family: ${({ theme }) => theme.fonts.sen}
+    
+  }
+
+  button {
+    font-family: ${({ theme }) => theme.fonts.sen};
+    font-weight: 600;
   }
 `

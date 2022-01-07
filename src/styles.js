@@ -37,7 +37,7 @@ export const ContentApp = styled.div`
   button {
     display: block;
     margin-top: 50px;
-    padding: 7px 14px;
+    padding: 14px 24px;
     width: auto;
     background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 5px;
