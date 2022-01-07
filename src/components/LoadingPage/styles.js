@@ -32,6 +32,8 @@ export const ContainerLoading = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   transition: 1.2s;
 
+  z-index: 10;
+
   div {
     position: relative;
     display: flex;

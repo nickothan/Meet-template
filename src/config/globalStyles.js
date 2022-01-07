@@ -57,6 +57,8 @@ export const Global = createGlobalStyle`
     font-size: 18px;
     color: ${({ theme }) => theme.colors.text};
     
+    font-family: ${({ theme }) => theme.fonts.sen};
+    font-weight: 600;
   }
 
   button {
