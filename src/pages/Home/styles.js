@@ -2,12 +2,23 @@ import styled from "styled-components"
 
 export const ContainerHome = styled.section`
   position: relative;
-  margin: auto;
+  margin: 5% auto;
   max-width: 1024px;
-  max-height: 700px;
+  max-height: 800px;
   padding: 30px 100px;
   background-color: ${({ theme }) => theme.colors.background};
   border-radius: 24px;
+
+  @media (max-width: 1080px) {
+    margin: 3%;
+  }
+  @media (max-width: 768px) {
+    padding: 30px 40px;
+  }
+
+  @media (max-width: 414px) {
+    padding: 30px 20px;
+  }
 `
 export const ContentHome = styled.div`
   margin: auto;
@@ -17,31 +28,22 @@ export const ContentHome = styled.div`
   justify-content: center;
   align-items: start;
 
-  h1 {
-    display: block;
-    letter-spacing: 0.1em;
-    z-index: 2;
-
-    span {
-      z-index: 4;
-    }
-  }
-
   p {
     letter-spacing: 0.05em;
-    width: 400px;
+    max-width: 400px;
     line-height: 1.2em;
   }
 
   button {
     display: block;
-    margin: 40px 0 5px 0;
+    margin: 30px 0 5px 0;
     padding: 14px 24px;
     width: auto;
     background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 5px;
     cursor: pointer;
     transition: 0.6s;
+    z-index: 2;
 
     &:hover {
       transform: scale(1.02);
@@ -49,13 +51,46 @@ export const ContentHome = styled.div`
   }
 
   div {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    display: inline-flex;
 
-    img {
-      width: 40px;
+    &:nth-child(2) {
+      position: relative;
+
+      h2 {
+        letter-spacing: 0.1em;
+        z-index: 2;
+        @media (max-width: 768px) {
+          letter-spacing: 0em;
+        }
+      }
+
+      span {
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        z-index: 4;
+        letter-spacing: 0.1em;
+
+        @media (max-width: 768px) {
+          letter-spacing: 0em;
+          right: 40px;
+          z-index: 1;
+        }
+      }
     }
+
+    &:last-child {
+      align-items: center;
+      gap: 5px;
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  img {
+    width: 100px;
   }
 `
 export const Images = styled.div`
@@ -79,6 +114,11 @@ export const Images = styled.div`
         top: 12%;
         left: 10%;
         width: 80px;
+
+        @media (max-width: 414px) {
+          top: 12%;
+          width: 40px;
+        }
       }
     }
 
@@ -101,10 +141,41 @@ export const Images = styled.div`
           width: 180px;
         }
         &:nth-child(4) {
-          top: 42%;
+          top: 44%;
           left: 5%;
-          width: 120px;
+          width: 100px;
           z-index: 3;
+        }
+
+        @media (max-width: 825px) {
+          &:nth-child(4) {
+            display: none;
+          }
+        }
+        @media (max-width: 768px) {
+          z-index: 1;
+          &:nth-child(2) {
+            display: none;
+          }
+
+          &:nth-child(3) {
+            bottom: 10%;
+            right: 20%;
+            width: 130px;
+          }
+        }
+        @media (max-width: 414px) {
+          &:first-child {
+            top: 10%;
+            right: 20%;
+            width: 80px;
+          }
+
+          &:nth-child(3) {
+            bottom: 10%;
+            right: 10%;
+            width: 100px;
+          }
         }
       }
     }

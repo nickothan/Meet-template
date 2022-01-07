@@ -46,11 +46,20 @@ export const Global = createGlobalStyle`
     border-spacing: 0;
   }
 
-  h1 {
+  h2, span {
     font-size: 100px;
     color: ${({ theme }) => theme.colors.primary};
     font-weight: 600;
-    font-family: ${({ theme }) => theme.fonts.inter}
+    font-family: ${({ theme }) => theme.fonts.inter};
+    
+    @media (max-width: 768px) {
+      font-size: 81px;
+    }
+    
+    @media (max-width: 414px) {
+      font-size: 44px;
+      
+    }
   }
   
   p{

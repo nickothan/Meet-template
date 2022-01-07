@@ -11,21 +11,6 @@ import Img5 from "../../components/Assets/User-5.svg"
 
 const Home = () => (
   <ContainerHome>
-    <ContentHome>
-      <img src={Logo} alt="Logo" />
-      <h1>
-        Meet New entrepre<span>neurs</span>
-      </h1>
-      <p>
-        Meet is a new media platform for entrepreneus to connect and socialize
-      </p>
-      <button>Get notified at launch</button>
-
-      <div>
-        <img src={Twitter} alt="Twitter" />
-        <p>Follow us on Twitter</p>
-      </div>
-    </ContentHome>
     <Images>
       <div>
         <img src={Img3} alt="Img3" />
@@ -37,6 +22,22 @@ const Home = () => (
         <img src={Img5} alt="Img5" />
       </div>
     </Images>
+    <ContentHome>
+      <img src={Logo} alt="Logo" />
+      <div>
+        <h2>Meet New entrepre</h2>
+        <span>neurs</span>
+      </div>
+      <p>
+        Meet is a new media platform for entrepreneus to connect and socialize
+      </p>
+      <button>Get notified at launch</button>
+
+      <div>
+        <img src={Twitter} alt="Twitter" />
+        <p>Follow us on Twitter</p>
+      </div>
+    </ContentHome>
   </ContainerHome>
 )
 
