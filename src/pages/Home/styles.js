@@ -16,7 +16,7 @@ export const ContainerHome = styled.section`
     padding: 30px 40px;
   }
 
-  @media (max-width: 414px) {
+  @media (max-width: 425px) {
     padding: 30px 20px;
   }
 `
@@ -115,7 +115,7 @@ export const Images = styled.div`
         left: 10%;
         width: 80px;
 
-        @media (max-width: 414px) {
+        @media (max-width: 425px) {
           top: 12%;
           width: 40px;
         }
@@ -164,7 +164,7 @@ export const Images = styled.div`
             width: 130px;
           }
         }
-        @media (max-width: 414px) {
+        @media (max-width: 425px) {
           &:first-child {
             top: 10%;
             right: 20%;
