@@ -1,18 +1,6 @@
 //* Import styles
 import { ContainerLoading } from "./styles"
 
-window.onload = function () {
-  const contenedor = document.getElementById("ContenedorLoading")
-
-  setTimeout(() => {
-    contenedor.style.visibility = "hiden"
-    contenedor.style.opacity = "0"
-    setTimeout(() => {
-      contenedor.style.display = "none"
-    }, 1000)
-  }, 1000)
-}
-
 const LoadingPage = () => (
   <ContainerLoading id="ContenedorLoading">
     <div>
